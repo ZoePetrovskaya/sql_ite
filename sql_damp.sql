@@ -1,0 +1,2 @@
+BEGIN TRANSACTION;CREATE TABLE cars(       car_id INTEGER   PRIMARY KEY AUTOINCREMENT, 
+      model TEXT NOT NULL,       price INTEGER);INSERT INTO "cars" VALUES(1,'Запорожец',1000);CREATE TABLE cust(       name TEXT,       tr_in INTEGER,       buy INTEGER);INSERT INTO "cust" VALUES('Федор',1,2);DELETE FROM "sqlite_sequence";INSERT INTO "sqlite_sequence" VALUES('cars',1);COMMIT;
